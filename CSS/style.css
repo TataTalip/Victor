@@ -1,0 +1,92 @@
+body {
+/*background-color: #747273;*/
+background-image: url(../image/grey.jpg);
+}
+header{
+	width: 100%;
+	height: 100;
+	border: 2px solid green;
+}
+
+nav {
+	position: absolute;
+	width: 1200px;
+	height: 50px;
+/*	border: 3px solid red;*/
+	border-radius: 10px;
+	/*background-color: #AFEEEE;*/
+	left: 90px;
+	top: 112px;
+	
+}
+/*
+ul.menu {
+	width: 100%;
+	height: 50px;
+	position: relative;
+	display: table;
+	marign: 0;
+	padding: 0;
+
+}
+*/
+ ul{
+	list-style: none; /*убираем маркеры*/
+    margin: 0; /*убираем отступы*/
+	background: #747273;
+	/*height: 50px;*/
+	position: absolute;
+	}
+  
+   ul.vip{
+	/*list-style: none; /*убираем маркеры*/
+    /*margin: 0; /*убираем отступы*/
+	background: none;
+	
+	
+	}
+  
+  a{
+	  text-decoration: none; /*убираем подчеркинвания ссылок*/
+	  background: #FAFAD2;
+	  padding: 0px 40px;
+	  display: block;
+	  /*border-right: 2px solid #677277;*/
+	 line-height: 40px; /*выравнивание меню по вертикали*/
+		-moz-transition: all 0.3s 0.01s ease; /*делаем плавный переход*/
+		-o-transition: all 0.3s 0.01s ease;
+		-webkit-transition: all 0.3s 0.01s ease;
+	}
+	
+	a:hover {
+	background: #D43737; /*эффект при наведении*/
+	}
+	
+
+	
+li {
+	float: left;
+	position: relative;
+	}
+		
+		li > ul {				/*для скрытого меню*/
+		/*position: absolute;*/
+		top: 42px;
+		display: none;
+		
+		}
+		li:hover   ul {  /*скрытая часть выпадающего теперь видна*/
+		display: block;
+		/*width: 200px;*/
+		 line-height: 20px;
+		
+		
+	    }
+		
+		li:hover  ul  li {
+		float: none;
+		}
+		
+		
+		
+		
