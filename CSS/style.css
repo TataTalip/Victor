@@ -1,21 +1,33 @@
 body {
 /*background-color: #747273;*/
-background-image: url(../image/grey.jpg);
+background-image: url(../image/12.jpg);
+background-size: 100%;
 }
 header{
-	width: 100%;
-	height: 100;
-	border: 2px solid green;
-}
+	/*width: 100%;*/
+	height: 100px;
+	/*border: 2px solid green;*/
+	/*background-color: #696969;*/
+	background: linear-gradient (to bottom, #DEB887, #696969);
+	}
 
+	/*header.logo {
+	background-image: url(../image/v.png);
+	width: 50px;
+	height: 50px;
+	top: 5px;
+	float: left;
+	}*/
+	
 nav {
 	position: absolute;
 	width: 1200px;
 	height: 50px;
 /*	border: 3px solid red;*/
 	border-radius: 10px;
+	 box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
 	/*background-color: #AFEEEE;*/
-	left: 90px;
+	left: 40px;
 	top: 112px;
 	
 }
@@ -52,7 +64,7 @@ ul.menu {
 	  background: #FAFAD2;
 	  padding: 0px 40px;
 	  display: block;
-	  /*border-right: 2px solid #677277;*/
+	  border-right: 2px solid #677277;
 	 line-height: 40px; /*выравнивание меню по вертикали*/
 		-moz-transition: all 0.3s 0.01s ease; /*делаем плавный переход*/
 		-o-transition: all 0.3s 0.01s ease;
