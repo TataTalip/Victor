@@ -1,6 +1,6 @@
 body {
 /*background-color: #747273;*/
-background-image: url(../image/12.jpg);
+background-image: url(../image/12345.jpg);
 background-size: 100%;
 }
 header{
@@ -21,10 +21,10 @@ header{
 	
 nav {
 	position: absolute;
-	width: 1200px;
+	width: 120%;
 	height: 50px;
 /*	border: 3px solid red;*/
-	border-radius: 10px;
+	border-radius: 30%;
 	 box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
 	/*background-color: #AFEEEE;*/
 	left: 40px;
@@ -61,10 +61,10 @@ ul.menu {
   
   a{
 	  text-decoration: none; /*убираем подчеркинвания ссылок*/
-	  background: #FAFAD2;
-	  padding: 0px 40px;
+	  background: #40E0D0;
+	  padding: 0px 37px;
 	  display: block;
-	  border-right: 2px solid #677277;
+	  border-right: 2px solid #A9A9A9;
 	 line-height: 40px; /*выравнивание меню по вертикали*/
 		-moz-transition: all 0.3s 0.01s ease; /*делаем плавный переход*/
 		-o-transition: all 0.3s 0.01s ease;
@@ -72,7 +72,7 @@ ul.menu {
 	}
 	
 	a:hover {
-	background: #D43737; /*эффект при наведении*/
+	background: #E0FFFF; /*эффект при наведении*/
 	}
 	
 
@@ -92,6 +92,7 @@ li {
 		display: block;
 		/*width: 200px;*/
 		 line-height: 20px;
+		 white-space: nowrap;
 		
 		
 	    }
