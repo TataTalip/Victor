@@ -12,45 +12,17 @@ head{
         height:100%;
 }
 
-.menu1 {
-	display: none;
-	width: 90%;
-	height: 5%;
-	font-size: 100%;
-	margin: auto;
-	}
-.menu2 {
-	position: absolute;
-	width: 90%;
-	height: 5%;
-	display: flex;
-	margin: 30px;
-	justify-content: center; /*Центрирование по горизонтали*/
-    align-items: center;     /*Центрирование по вертикали */	
-	}
- .menu2 > .menu1 { /*переход между меню*/
-	 top: 0;
-	 left: 0%;
-	 
-	 margin-top: -6px;
-	 margin-left: -1px;
 
- }
- 
- .menu2:hover > .menu1 { 
-	display: block;
-	}
-	
-	.menu2.pull-left {
-	float: none;
-	position: relative;
-	}
-	
 div.logo {
 	display: block;
 	margin: auto;
 	background-color: rgba(255, 255, 224, 0.5);
 	width: 80%
+}
+
+nav li {
+	display: inline-block;
+
 }
 
  ul{
@@ -64,12 +36,18 @@ div.logo {
 	/*border: 4px double black;*/
 	/*outline-style: outset;*/
 }
-div.centr {
+nav {
 	margin: auto;
 	width:  85%;
 	height: 80%;
 	background-color: rgba(169, 169, 169, 0.7);
+	
 	}
+ ul li {
+	position: relative;
+	}
+ 
+
  
  a{
 	  text-decoration: none; /*убираем подчеркинвания ссылок*/
@@ -88,28 +66,32 @@ a:hover {
 	}
 
 	
-li {
-	float: left;
-	position: relative;
-	}
+
 		
 	
-	  li ul > li    {				/*для скрытого меню*/
+	 ul li ul    {				/*для скрытого меню*/
 		/*position: absolute;*/
 		display: none;
 		}
-	li:hover  >  ul  > li {  /*скрытая часть выпадающего теперь видна*/
+	ul	 li:hover ul   {				/*для скрытого меню*/
+		/*position: absolute;*/
+		display: block;
+		}
+		
+		
+		
+		ul	 li:hover ul li ul   {				/*для скрытого меню*/
+		/*position: absolute;*/
+		display: none;
+		}
+		
+	
+	 ul  li ul li ul  {  /*скрытая часть выпадающего теперь видна*/
 		display: block;
 		/*width: 200px;*/
 		 line-height: 0px;
 		 white-space: nowrap;
 	 }
-li:hover  ul  li {
-		float: none;
-		}
-	nav ul ul ul {
-	left: 190px;
-	top: 0px;}	
-		
+	
 		
 		
